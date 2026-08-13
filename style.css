@@ -1,0 +1,178 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+line-height:1.6;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#111;
+position:fixed;
+width:100%;
+z-index:1000;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-size:22px;
+font-weight:bold;
+color:#fff;
+}
+
+.logo img{
+width:45px;
+height:45px;
+border-radius:50%;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#ff2b2b;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.75)),url("images/hero-background.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:56px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+max-width:700px;
+margin:auto;
+font-size:20px;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+background:#ff2b2b;
+padding:15px 35px;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#d90000;
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 10%;
+}
+
+h2{
+font-size:38px;
+margin-bottom:35px;
+text-align:center;
+}
+
+.plans{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#181818;
+padding:30px;
+border-radius:15px;
+text-align:center;
+border:1px solid #333;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 30px rgba(255,43,43,.35);
+}
+
+.card h1{
+margin:20px 0;
+color:#ff2b2b;
+}
+
+.dashboard{
+text-align:center;
+}
+
+.dashboard img{
+width:100%;
+max-width:800px;
+border-radius:20px;
+margin-top:25px;
+}
+
+.review{
+background:#181818;
+padding:25px;
+margin:20px auto;
+max-width:700px;
+border-radius:15px;
+border-left:5px solid #ff2b2b;
+}
+
+#contact{
+text-align:center;
+}
+
+footer{
+background:#111;
+padding:30px;
+text-align:center;
+margin-top:50px;
+color:#bbb;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content p{
+font-size:17px;
+}
+
+.nav-links{
+display:none;
+}
+
+}
